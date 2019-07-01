@@ -42,6 +42,7 @@ server <- function(input, output) {
     text <- paste0(data$numeric, " %")
     data$text <- text
     data
+    
   })
    output$distPlot <- renderPlotly({
       data <- get_data()
